@@ -32,7 +32,12 @@ ul{
 }
 ul li{
     list-style-type: none;
-    margin-bottom:19px;
+}
+.btn{
+    box-shadow: none;
+}
+.btn:focus{
+    outline: none;
 }
 body{
      font-size: 16px;
@@ -51,6 +56,7 @@ header{
     box-shadow: 0  2px 48px rgba(0, 0, 0, 0.06);
     position: relative;
     z-index: 22;
+    padding:19px 0
 }
 .hero{
     position: relative;
@@ -107,9 +113,8 @@ header{
 .navbar {
     padding:0;
 }
-.navbar-expand-lg .navbar-nav{
-    width:50%;
-}
+
+
 
 .heroText{
     padding-top:200px;
@@ -373,7 +378,6 @@ footer .container{
     left: 0;
     width:100%;
     right:0;
-    padding:10px 0;
     transition: all .5s;;
     animation:sticky;
 }
@@ -393,6 +397,9 @@ footer .container{
     .services{
         padding:50px 0;
     }
+    .servicesBox{
+        margin-bottom:20px;
+    }
     body{
         font-size:12px
     }
@@ -407,24 +414,18 @@ footer .container{
         padding:20px 0;
     }
 
-    .reqBtn.btn{
-        width:100%;
-    }
-    .heroImg{
-        position: relative;
-        width:100%;
-        margin-bottom:50px;
-    }
+
+    .iphoneImg{
+display: none;    }
     
     .navbar-expand-lg .navbar-nav .nav-link:before{
         display:none;
     }
-    .subscribeBtn{
-        width: 113px;
-    }
-    .formBG{
+    .downloadBtn{
         width:100%;
+        margin-top:10px;
     }
+
     .contactForm{
       padding:10px;
     }
@@ -433,26 +434,36 @@ footer .container{
     width:100%;
 }
 
-.startIcon:before{
-    display: none;
-}
+
    footer{
        padding:20px 0;
    }
-    .socialIcons{
-        text-align: right;
-        margin-top:20px;
-        margin-bottom:20px;
-    }
 
-    .socialIcons li{
-        float: none;
-    }
-    .requestBtn{
-        width:100%;
-    }
-    .heroText{
-        margin-top: 0px;
+
+.heroBG{
+    display: none;
+}
+.appBtn{
+    width:150px;
+}
+.adv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sectionTitle{
+    margin-bottom: 50px;
+}
+.subscribe::before{
+    display: none;
+}
+.halfFormGroup{
+    width: 100%;
+}
+.marginFormGroup{
+    margin-left:0
+}
+.heroText{
+        padding:20px 0px;
     }
     button.navbar-toggler {
         position: relative;
@@ -462,19 +473,17 @@ footer .container{
         cursor: pointer;
         border-radius: 0;
         opacity: .7;
-        border:1px solid white;
+        border:1px solid var(--gradient-color1);;
         text-align: center;
     }
 
-  
-    .serviceIcon{
-     width:40px;
-     margin-left:10px;
-    }
-
-
+  header{
+      padding:10px 0;
+      height:auto
+  }
+ 
     .mobileMenu i{
-        background-color: white;
+        background-color: var(--gradient-color1);
         border-radius: 2px;
         content: '';
         display: block;
@@ -498,28 +507,48 @@ footer .container{
         width:100%;
         margin-top:20px;
     }
-    .heroSection{
-        padding: 50px 0;
-    }
-   .services .borderd-bottom ,.borderLeft{
-        border:0;
-    }
-    .services .col-lg-6{
-        border-bottom: 1px solid rgba(42, 45, 51, .2);
+    .appBtn.sendBtn{
+        width:100%;
+        float: none;
     }
 
-.work{
-    padding:50px 0;
-}
+    .subscribeBox .subscribeBtn{
+        width: 100% ;
+        float: none;
+    }
+    .contactForm {
+        margin-top:20px;
+    }
 }
 
 @media(min-width:768px) and (max-width:1023px){
     body{
         font-size:14px
     }
-
+    .appBtn{
+        width:140px;
+    }
+    .iphoneImg{
+        width:220px;
+    }
+    
+    .halfFormGroup {
+        width: 46%;}
+        .heroBG{
+            width:48%;
+        }
+.adv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+header{
+    padding:0;
+}
 .services{
     padding:50px 0
+}
+.servicesBox{
+    margin-bottom:20px;
 }
 footer{
     padding:20px 0;
@@ -532,25 +561,17 @@ footer{
 }
 
 
-.reqBtn.btn{
-    display: block;
-    width:100%;
-}
     .hero{
         padding:20px 0;
     }
   
-    .socialIcons{
-        text-align: center;
-    }
-    .socialIcons li{
-        float: none;
-    }
+
   .marginBox{
       margin-top:0;
   }
     .heroText{
-        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom:50px
     }
 
 
@@ -566,13 +587,8 @@ footer{
         width:100%;
         margin-top:20px;
     }
-    .heroSection{
-        padding-top: 50px;;
-    }
 
-    .contactForm{
-        padding:10px;
-    }
+
          .navbar-nav {
             display: -ms-flexbox;
             display: flex;}
