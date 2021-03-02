@@ -294,6 +294,9 @@ box-shadow: 0  2px 48px rgba(0, 0, 0, 0.06);
     margin-top:25px;
     margin-bottom: 40px;;
 }
+.contactList li{
+    margin-bottom: 24px;;
+}
 .contactList span{
     color:var(--gradient-color1);
     display: inline-block;
@@ -304,7 +307,7 @@ box-shadow: 0  2px 48px rgba(0, 0, 0, 0.06);
     display: inline-block;
     margin:0;
     margin-right:30px;
-    font-size: 1.125em;
+    font-size: 1.0625em;
     color:var(--sub-font-color)
 }
 .contactForm .form-group{

@@ -44,29 +44,7 @@ jQuery(function ($) {
   $(".navbar .nav-link").click(function(){
     $(".collapse").removeClass("show");
   });
-  $('.workSlider').owlCarousel({
-    autoplay: true,
-    loop: false,
-    margin: 20,
-    nav: false,
-    rtl:true,
-    dots:true,
-    responsive: {
-      0: {
-        items: 1,
 
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 4,
-
-      }
-      
-
-    }
-  });
   
 });
 
